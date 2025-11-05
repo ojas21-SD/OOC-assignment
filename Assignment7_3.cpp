@@ -1,0 +1,36 @@
+// C++ program to illustrate the implementation of Hybrid Inheritance 
+#include <iostream> [cite: 141]
+using namespace std; [cite: 142]
+// base class [cite: 143]
+class Vehicle { [cite: 144]
+public: [cite: 145]
+Vehicle() { cout << "This is a Vehicle\n"; } [cite: 146]
+}; [cite: 147]
+// base class [cite: 148]
+class Fare { [cite: 149]
+public: [cite: 150]
+Fare() { cout << "Fare of Vehicle\n"; } [cite: 154]
+}; [cite: 155]
+// first subclass [cite: 156]
+class Car: public Vehicle { [cite: 157]
+public: [cite: 158]
+Car() { cout << "This Vehicle is a Car\n"; } [cite: 160]
+}; [cite: 159]
+// second subclass [cite: 161]
+class Bus: public Vehicle, public Fare { [cite: 162]
+public: [cite: 163]
+Bus() { cout << "This Vehicle is a Bus with Fare\n"; } [cite: 164]
+}; [cite: 165]
+// main function [cite: 166]
+int main() [cite: 167]
+{ [cite: 168]
+
+    cout << "Name - Ojas desai" << endl;
+    cout << "Div  - B" << endl;
+    cout << "Roll No - 63" << endl;
+    cout << "---------------------------" << endl << endl;
+// Creating object of subclass will [cite: 170]
+// invoke the constructor of base class. [cite: 171]
+Bus obj2; [cite: 172]
+return 0; [cite: 173]
+} [cite: 169]
